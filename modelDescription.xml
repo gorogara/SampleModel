@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<fmiModelDescription
+        fmiVersion="2.0"
+        modelName="SampleModel"
+        guid="3147a610-e5da-11eb-ba80-0242ac130004"
+        description="SampleModel description"
+        author="Kristoffer Eide"
+        version="0.1">
+
+    <CoSimulation
+            modelIdentifier="SampleModel"
+            canHandleVariableCommunicationStepSize="true"/>
+
+    <ModelVariables>
+        <ScalarVariable name="input1" valueReference="0" causality="input" variability="discrete">
+            <Real start="0.0"/>
+        </ScalarVariable>
+        
+        <ScalarVariable name="output1" valueReference="1" causality="output" variability="discrete">
+            <Real/>
+        </ScalarVariable>
+    </ModelVariables>
+
+    <ModelStructure>
+        <Outputs>
+            <Unknown index="1" />
+        </Outputs>    
+    </ModelStructure>
+
+</fmiModelDescription>
