@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<fmiModelDescription
+        fmiVersion="2.0"
+        modelName="MNav"
+        guid="2aa22438-0bf6-11ec-9a03-0242ac130003"
+        description="SampleModel description"
+        author="JO Gyeongmin"
+        version="0.1">
+
+	<CoSimulation
+			modelIdentifier="MNav"
+			canHandleVariableCommunicationStepSize="true"/>
+
+	<ModelVariables>
+		<ScalarVariable name="output" valueReference="0" causality="output">
+			<String></String>
+		</ScalarVariable>
+
+		<ScalarVariable name="input" valueReference="1" causality="input">
+			<String start=""/>
+		</ScalarVariable>
+
+	</ModelVariables>
+
+	<ModelStructure>
+		<Outputs>
+			<Unknown index="1" />
+		</Outputs>
+	</ModelStructure>
+
+</fmiModelDescription>
